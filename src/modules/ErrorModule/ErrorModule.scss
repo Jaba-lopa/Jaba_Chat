@@ -1,0 +1,72 @@
+// main test - #ff0033
+// timer test - #9e0025
+
+.ErrorWindow{
+
+    margin: 10px;
+    position: fixed;
+    padding: 3px 10px;
+    font-size: 18px;
+    background-color: #ff0033;
+    border-radius: 5px;
+
+    z-index: 99;
+    cursor: pointer;
+
+    animation: ErrorAppearance 7s linear 1;
+
+    left: -40%;
+
+    .Error{
+        word-break: break-all;
+        width: 320px;
+        min-height: 50px;
+        
+        display: flex;
+        align-items: center;
+    }
+
+    .ErrorType{
+        margin-right: 10px;
+        color: #ff0033;
+        padding: 5px 14px;
+        background-color: #fff;
+        border-radius: 50px;
+    }
+
+    .ErrorMessage{
+        color: #fff;
+    }
+}
+
+.ErrorWindow::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    max-width: 100%;
+    background-color: #9e0025;
+    height: 5px;
+    animation: ErrorTimer 5s linear 1;
+    animation-delay: 1s;
+}
+
+@keyframes ErrorTimer {
+    0% {
+        width: 100%;
+    }
+    100%{
+        width: 0;
+    }
+}
+
+@keyframes ErrorAppearance {
+    0%, 100%{
+        left: -40%;
+    }
+    12.5%, 87.5%{
+        left: 0;
+    }
+}

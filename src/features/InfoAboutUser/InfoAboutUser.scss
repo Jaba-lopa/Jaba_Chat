@@ -1,0 +1,16 @@
+.InfoAboutUser{
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+
+    .username{
+        color: #fff;
+        font-family: 'Roboto';
+        margin-right: 2.5rem;
+    }
+
+    button{
+        margin-right: 2.5rem;
+    }
+
+}

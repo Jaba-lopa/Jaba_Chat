@@ -1,0 +1,25 @@
+.spaceForMessage{
+    margin: 8px 0;
+    width: 100%;
+    display: flex;
+}
+
+.message{
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 20%;
+    max-width: 500px;
+    word-break: break-all;
+
+    div{
+        color: #fff;
+        font-size: 0.8rem;
+    }
+    .message__username{
+        color: #0079db;
+    }
+
+    .message__text{
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,27 @@
+.messagesWrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.Chating{
+    overflow-y: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.Chating::-webkit-scrollbar {
+    width: 10px;
+}
+
+.Chating::-webkit-scrollbar-track{
+    background-color: #17212b;
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+
+.Chating::-webkit-scrollbar-thumb{
+    background-color: #a0bfeb;
+    opacity: 0.7;
+    border-radius: 20px;
+}

@@ -1,0 +1,28 @@
+.listRooms{
+    width: 40%;
+    height: 100vh;
+    border-right: 1px solid black;
+    background-color: #17212B;
+
+    display: grid;
+    grid-template-rows: 2.5rem 1fr 2.5rem;
+
+
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &>div{
+            width: 99%;
+        }
+    }
+
+    .list{
+        overflow-y: scroll;
+    }
+
+    .list::-webkit-scrollbar{
+        opacity: 0;
+        width: 0;
+    }
+}

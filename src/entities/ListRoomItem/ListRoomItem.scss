@@ -1,0 +1,10 @@
+.roomItem{
+    padding: 10px;
+    transition: 0.1s;
+    color: #fff;
+}
+
+.roomItem:hover{
+    filter: brightness(130%);
+    cursor: pointer;
+}
